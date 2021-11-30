@@ -1,7 +1,7 @@
 # GadgetBotDiscordv0
 A Robot that does many things using the nextcord api
 
-
+The first AGI using BERT
 "ABOUT:" 
 Copyright <20XX> <Flames Co. LTD>
 
