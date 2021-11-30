@@ -50,9 +50,7 @@ appname= os.getenv(input("Name the app and add it to the applications directory:
 print("Syncing with folder: " + appname)
 print("Enter the name of the dmg file you want to create")
 dmgname= os.getenv(input("Enter the name of the dmg file you want to create: "))
-print("This feature is work in progrss AUTOCMake v0.1 ")
-
-
+print("The name of the file you gave was:", dmgname)
 ## get the name of the .c file from the application or if it is c++ get the cpp or if it is swift get the swift file from the selected folder 
 def cmakeswift(appname):
     os.system('cmake -G "Unix Makefiles" -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/Applications/' + appname + ' -DCMAKE_OSX_DEPLOYMENT_TARGET=10.13 ' + folderinput + ' && make -j4 && make install')
@@ -60,6 +58,11 @@ def cmakeswift(appname):
 def cmakecpp(appname):
     os.system('cmake -G "Unix Makefiles" -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/Applications/' + appname + ' -DCMAKE_OSX_DEPLOYMENT_TARGET=10.13 ' + folderinput + ' && make -j4 && make install')
     os.system('dmgbuild --volname ' + appname + ' --pkg-name ' + appname + ' --target-name ' + dmgname + ' ' + appname + '.dmg')
-    def cmake_C(appname): {
-        os.system('cmake -G "Unix Makefiles" -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/Applications/' + appname + ' -DCMAKE_OSX_DEPLOYMENT_TARGET=10.13 ' + folderinput + ' && make -j4 && make install')
-    }
+   
+def Greeting(Greeting): {
+    ## this is the program script for all the functions in this module
+    print("Welecome to Gadgetbot AutoCmake 0.1a")
+ 
+}
+
+print(cmakecpp('Trying to compile cmakecpp')
