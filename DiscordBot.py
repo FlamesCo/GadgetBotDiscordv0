@@ -11,7 +11,7 @@ import json
 import requests
 def main():
     client = discord.Client()
-    token = os.environ['zlcoKPItptVtVNtektNdOA3Z0En8JlJa']
+    token = os.environ['****************']
     client.run(token)
 
     def Greeting(message):  # this is the greeting function
